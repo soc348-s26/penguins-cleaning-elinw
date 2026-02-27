@@ -8,6 +8,8 @@ date: '2022-06-02'
 ```
 ```{r}
 # load packages
+library(palmerpenguins)
+library(dplyr)
 ```
 
 
