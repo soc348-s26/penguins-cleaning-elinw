@@ -31,6 +31,10 @@ Also load dplyr, tidyr, skimr, ggplot2, stringr.
 
 ```{r}
 library(palmerpenguins)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(stringr)
 
 ```
 
@@ -83,7 +87,7 @@ In the code chunk below create penguins_new from
 the penguins_raw data set using the assignment operator `<-`. 
 
 ```{r}
-
+penguins_new <- penguins_raw
 ```
 Now run your test code chunk again.
 
@@ -93,7 +97,8 @@ In the code chunk below use base functions to get a sense of the data.  (See sli
 
 
 ```{r}
-
+str(penguins)
+str(penguins_new)
 ```
 
 Another way to get a sense of a data set is to use
@@ -103,7 +108,8 @@ Remember: How do you access a package?
 Do that below.
 
 ```{r}
-
+skimr::skim(penguins)
+skimr::skim(penguins_new)
 ```
 
 ### Do you notice anything new? What?
